@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Topbar1 from './components/layouts/Topbar1';
+import Showbars from './components/layouts/Showbars';
+import CreatingGrid from './components/layouts/CreatingGrid';
+import ServicesPage from './components/layouts/ServicesPage';
+import OurProjects from './components/layouts/OurProjects';
+import ClinentsPage from './components/layouts/Clientspage';
+import TeamofthePage from './components/TeamofthePage';
+ 
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+      
+      
+      
+    <Topbar1/>
+      
+    <Showbars/>
 
-export default App;
+    <ServicesPage/>
+    <OurProjects/>
+    <CreatingGrid/>
+    <TeamofthePage/>
+    <ClinentsPage/>
+     
+    
+    
+    </div>
+  )
+}
